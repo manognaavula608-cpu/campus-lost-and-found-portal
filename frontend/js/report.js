@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:5000/api/items";
+const API_URL = "https://campus-lost-and-found-portal-1-7prl.onrender.com/api/items";
 
 const params = new URLSearchParams(window.location.search);
 const reportType = params.get("type");
