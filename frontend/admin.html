@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Campus Lost and Found</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/admin.js" defer></script>
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+
+        <!-- Admin Header -->
+        <header class="dashboard-header">
+            <div>
+                <h1>Campus Lost & Found</h1>
+                <p>Administrator Dashboard</p>
+            </div>
+
+            <button id="adminLogoutBtn" class="logout-btn">
+                Logout
+            </button>
+        </header>
+
+        <!-- Welcome -->
+        <section class="welcome-section">
+            <h2>Welcome, Administrator!</h2>
+            <p>Monitor and manage campus lost and found activities.</p>
+        </section>
+
+        <!-- Statistics -->
+        <section class="dashboard-section">
+            <h2>Dashboard Statistics</h2>
+
+            <div class="dashboard-cards">
+
+                <div class="dashboard-card">
+                    <h3>Total Items</h3>
+                    <h2 id="totalItems">0</h2>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Lost Items</h3>
+                    <h2 id="lostItems">0</h2>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Found Items</h3>
+                    <h2 id="foundItems">0</h2>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Active Items</h3>
+                    <h2 id="activeItems">0</h2>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Claimed Items</h3>
+                    <h2 id="claimedItems">0</h2>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Recovered Items</h3>
+                    <h2 id="recoveredItems">0</h2>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Claim Statistics -->
+        <section class="dashboard-section">
+            <h2>Claim Statistics</h2>
+
+            <div class="dashboard-cards">
+
+                <div class="dashboard-card">
+                    <h3>Pending Claims</h3>
+                    <h2 id="pendingClaims">0</h2>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Approved Claims</h3>
+                    <h2 id="approvedClaims">0</h2>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Rejected Claims</h3>
+                    <h2 id="rejectedClaims">0</h2>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Manage Items -->
+        <section class="dashboard-section">
+            <h2>Manage Reported Items</h2>
+            <div id="adminItemsContainer">
+                Loading items...
+            </div>
+        </section>
+
+        <!-- Manage Claims -->
+        <section class="dashboard-section">
+            <h2>Manage Student Claims</h2>
+            <div id="adminClaimsContainer">
+                Loading claims...
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

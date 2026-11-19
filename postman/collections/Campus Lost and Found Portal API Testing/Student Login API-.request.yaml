@@ -1,0 +1,31 @@
+$kind: http-request
+name: Student Login API.
+description: ""
+url: http://localhost:5000/api/auth/login
+method: POST
+body:
+  type: json
+  content: "\r
+
+    {\r
+
+    \    \"email\": \"postmanstudent2026@example.com\",\r
+
+    \    \"password\": \"Student123\"\r
+
+    }\r\n"
+scripts:
+  - type: afterResponse
+    code: "const response = pm.response.json();\r
+
+      \r
+
+      if (response.token) {\r
+
+      \    pm.environment.set(\"token\", response.token);\r
+
+      \    console.log(\"JWT token saved successfully\");\r
+
+      }"
+    language: text/javascript
+order: 2000

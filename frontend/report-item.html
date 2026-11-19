@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item | Campus Lost and Found</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/report.js" defer></script>
+</head>
+<body class="dashboard-body">
+
+    <div class="report-container">
+        <div class="report-header">
+            <h1 id="formTitle">Report an Item</h1>
+            <p>Campus Lost and Found Portal</p>
+        </div>
+
+        <form id="reportForm">
+
+            <label for="itemName">Item Name</label>
+            <input type="text" id="itemName"
+                   placeholder="Example: Black Backpack" required>
+
+            <label for="category">Category</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Bags">Bags</option>
+                <option value="Books">Books</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea id="description"
+                      placeholder="Describe the item..." required></textarea>
+
+            <label for="location">Location</label>
+            <input type="text" id="location"
+                   placeholder="Where was it lost or found?" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+
+            <label for="image">Upload Item Photo (Optional)</label>
+            <input
+                type="file"
+                id="image"
+                name="image"
+                accept="image/*"
+            >
+            <p>Choose an image of the lost or found item. Maximum size: 5 MB.</p>
+
+            <button type="submit" id="submitBtn">Submit Report</button>
+
+            <p id="reportMessage"></p>
+        </form>
+
+        <a href="dashboard.html" class="back-link">
+            ← Back to Dashboard
+        </a>
+    </div>
+
+</body>
+</html>
