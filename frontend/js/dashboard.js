@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://campus-lost-and-found-portal-1-7prl.onrender.com/api";
 
 // Get the saved login details
 const token = localStorage.getItem("token");
@@ -21,6 +21,7 @@ if (savedUser) {
         console.log("Unable to read student details");
     }
 }
+
 
 // Logout
 document.getElementById("logoutBtn").addEventListener("click", function () {
@@ -77,8 +78,7 @@ async function loadItems() {
             if (item.imageUrl) {
                 const itemImage = document.createElement("img");
 
-                itemImage.src = `http://localhost:5000${item.imageUrl}`;
-                itemImage.alt = item.itemName;
+                itemImage.src = `https://campus-lost-and-found-portal-1-7prl.onrender.com${item.imageUrl}`;
                 itemImage.style.width = "150px";
                 itemImage.style.height = "120px";
                 itemImage.style.objectFit = "cover";
@@ -247,7 +247,7 @@ async function loadMyClaims() {
             // Display item photo
             if (claim.item && claim.item.imageUrl) {
                 const image = document.createElement("img");
-                image.src = `http://localhost:5000${claim.item.imageUrl}`;
+                image.src = `https://campus-lost-and-found-portal-1-7prl.onrender.com${claim.item.imageUrl}`;
                 image.alt = claim.item.itemName;
                 image.style.width = "140px";
                 image.style.height = "110px";

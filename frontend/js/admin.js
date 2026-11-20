@@ -1,5 +1,5 @@
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://campus-lost-and-found-portal-1-7prl.onrender.com/api";
 
 const token = localStorage.getItem("token");
 const user = JSON.parse(localStorage.getItem("user") || "null");
