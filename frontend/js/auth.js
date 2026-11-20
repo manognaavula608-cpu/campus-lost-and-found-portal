@@ -1,6 +1,6 @@
 
 
-const API_URL = "https://campus-lost-and-found-portal-1-7prl.onrender.com/api/items";
+const API_URL = "https://campus-lost-and-found-portal-1-7prl.onrender.com/api/auth";
 
 
 
