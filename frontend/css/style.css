@@ -564,3 +564,138 @@ a:hover {
         margin: 10px auto;
     }
 }
+
+
+/* HOME PAGE VISUAL IMPROVEMENTS */
+
+.home-body .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    padding: 85px 10%;
+}
+
+.home-body .hero-content {
+    max-width: 600px;
+}
+
+.home-body .hero-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    color: #7041A6;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.home-body .hero-content h1 {
+    margin-top: 22px;
+    font-size: 42px;
+    line-height: 1.25;
+}
+
+.home-body .hero-content p {
+    margin: 20px 0;
+}
+
+.home-body .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.home-body .hero-buttons a {
+    margin: 0 !important;
+}
+
+.home-body .hero-illustration {
+    position: relative;
+    width: 320px;
+    min-width: 260px;
+    padding: 45px 25px;
+    text-align: center;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 12px 35px rgba(80, 45, 120, 0.15);
+}
+
+.home-body .hero-icon {
+    font-size: 95px;
+    margin-bottom: 15px;
+}
+
+.home-body .hero-illustration h2 {
+    margin-bottom: 10px;
+}
+
+.home-body .hero-illustration p {
+    font-size: 14px;
+}
+
+.home-body .floating-icon {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    font-size: 30px;
+}
+
+.home-body .floating-icon.second {
+    top: auto;
+    right: auto;
+    bottom: 20px;
+    left: 18px;
+}
+
+.home-body #features > div.feature-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    min-height: 200px;
+    margin: 12px;
+    padding: 25px 18px;
+    background: white;
+    border: 1px solid #E5D5FF;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(80, 45, 120, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-body .feature-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(80, 45, 120, 0.16);
+}
+
+.home-body .feature-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 750px) {
+    .home-body .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .home-body .hero-buttons {
+        justify-content: center;
+    }
+
+    .home-body .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .home-body .hero-illustration {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .home-body #features > div.feature-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
